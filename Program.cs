@@ -7,29 +7,13 @@ Console.Write("Enter a number B: ");
 int B = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter a number C: ");
 int C = Convert.ToInt32(Console.ReadLine());
-int max = 0;
+int max = A;
 
-if (A > B)
-{
-    max = A;
-}
-else
-{
-   max = B;
-}
-if (B > C)
+if (B > max)
 {
     max = B;
 }
-else
-{
-    max = C;
-}
-if (A > C)
-{
-    max = A;
-}
-else
+if (C > max)
 {
     max = C;
 }
